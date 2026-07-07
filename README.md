@@ -1,16 +1,49 @@
-# React + Vite
+# JAL (Construction Site)
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+This is a modern web application built with React, Vite, and Tailwind CSS. It is designed with smooth animations using Framer Motion and optimized for a great user experience.
 
-Currently, two official plugins are available:
+## Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Framework**: [React](https://react.dev/)
+- **Build Tool**: [Vite](https://vitejs.dev/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **Animations**: [Framer Motion](https://www.framer.com/motion/)
+- **Icons**: [React Icons](https://react-icons.github.io/react-icons/)
+- **Scrolling**: [React Scroll](https://www.npmjs.com/package/react-scroll)
 
-## React Compiler
+## Getting Started
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Prerequisites
 
-## Expanding the Oxlint configuration
+Ensure you have Node.js installed on your machine.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/imadhahmed/JAL.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd JAL
+   ```
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+### Running the Application
+
+To start the development server, run:
+```bash
+npm run dev
+```
+
+This will run the app in development mode. Open [http://localhost:5173](http://localhost:5173) to view it in your browser.
+
+## Scripts
+
+- `npm run dev`: Starts the development server.
+- `npm run build`: Builds the app for production.
+- `npm run preview`: Locally preview the production build.
+- `npm run lint`: Lints the codebase using Oxlint.

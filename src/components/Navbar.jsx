@@ -23,8 +23,8 @@ const Navbar = () => {
       
       <ul className="hidden md:flex">
         {links.map(({ id, link }) => (
-          <li key={id} className="px-5 cursor-pointer capitalize font-semibold text-gray-300 hover:text-primary duration-200">
-            <Link to={link} smooth duration={500}>{link}</Link>
+          <li key={id} className="px-5 cursor-pointer capitalize font-semibold duration-200">
+            <Link activeClass="!text-primary" spy={true} to={link} smooth duration={500} offset={-80} className="text-gray-300 hover:text-primary">{link}</Link>
           </li>
         ))}
       </ul>
@@ -36,8 +36,8 @@ const Navbar = () => {
       {nav && (
         <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-dark text-gray-300 z-40">
           {links.map(({ id, link }) => (
-            <li key={id} className="px-4 cursor-pointer capitalize py-6 text-4xl hover:text-primary duration-200">
-              <Link onClick={() => setNav(!nav)} to={link} smooth duration={500}>{link}</Link>
+            <li key={id} className="px-4 cursor-pointer capitalize py-6 text-4xl duration-200">
+              <Link activeClass="!text-primary" spy={true} onClick={() => setNav(!nav)} to={link} smooth duration={500} offset={-80} className="hover:text-primary">{link}</Link>
             </li>
           ))}
         </ul>
